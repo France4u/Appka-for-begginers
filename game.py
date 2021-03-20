@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 sg.change_look_and_feel("Topanga")
 
-# Design pattern 1 - First window remains active
+# První okno
 
 layout1 = [( sg.Text ("Zadej množství hráčů. (Maximálně 10):"), sg. Input(key = "players")),
             [sg.Text(("**************************************************************************************************************************************************************************************************************"), key = 'OUTPUT1')],
@@ -26,6 +26,7 @@ while True:
     if event1 == sg.WIN_CLOSED or event1 == 'Opustit':
         break
 
+        #Druhé okno
     if not window2_active and event1 == 'Pokračovat':
         window2_active = True
 
