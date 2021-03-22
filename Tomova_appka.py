@@ -40,7 +40,7 @@ while True:
 
 
 
-        layout1 = [[sg.Text ("Autor: Tomáš Ferdan Datum | vydání: 12:40 CET | 22.03.2021 Verze: 1.10 | Creative Commons")],
+        layout1 = [[sg.Text ("Autor: Tomáš Ferdan | Datum vydání: 12:40 CET 22.03.2021 | Verze: 1.11 | Creative Commons")],
                    [sg.Button('Opustit')]]
 
 
