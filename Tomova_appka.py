@@ -1,5 +1,5 @@
 #Datum vydání: 12:40 CET  22.03.2021
-#Verze: 1.10
+#Verze: 1.11
 
 import os
 import subprocess
