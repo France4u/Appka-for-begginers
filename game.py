@@ -1,5 +1,4 @@
-#Datum vydání: 12:40 CET  22.03.2021
-#Verze: 1.11
+#Datum poslední úpravy: 23.03.2021
 
 import PySimpleGUI as sg
 
