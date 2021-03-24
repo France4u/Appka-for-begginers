@@ -11,7 +11,7 @@ layout = [[sg.Text ("Co chceš zapnout?"),],
         [sg.Text(("***************************************************************"), key = 'OUTPUT')],
         [sg.Button("Slovní hru"),sg.Button("Něco mi nakresli"), sg.Button("Info"), sg.Button("Opustit")]]
 
-window = sg.Window("Tomova appka", layout)
+window = sg.Window("Menu Appky", layout)
 window1_active = False
 window2_active = False
 while True:
@@ -26,9 +26,9 @@ while True:
 
         window['OUTPUT'].update(answer)
 
-        command = "game"
+        command = "Game-CZ"
 
-        subprocess.Popen(command)
+        subprocess.Popen (command)
 
     if not window1_active and event == 'Info':
         window1_active = True
@@ -80,6 +80,6 @@ while True:
 
             window2['OUTPUT2'].update(answer2)
 
-            command = "srdce"
+            command = "Hearth-CZ"
 
-            subprocess.Popen(command)
+            subprocess.Popen (command)

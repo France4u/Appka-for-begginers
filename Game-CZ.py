@@ -19,7 +19,7 @@ layout1 = [( sg.Text ("Zadej množství hráčů. (Maximálně 10):"), sg. Input
             [sg.Text(("**************************************************************************************************************************************************************************************************************"), key = 'OUTPUT10')],
             [sg. Button("Pokračovat"), sg.Button("Opustit")]]
 
-window1 = sg.Window('Tomova hra', layout1)
+window1 = sg.Window('Slovní hra', layout1)
 
 window2_active = False
 while True:

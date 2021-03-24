@@ -298,7 +298,7 @@ forward(20)
 right(60)
 forward(20)
 
-#pravá část srdce výplň
+#levá část srdce výplň
 right(60)
 forward(20)
 right(60)
