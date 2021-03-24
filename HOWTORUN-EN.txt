@@ -1,0 +1,19 @@
+Copyright Creative Commons.
+When distributing mention author. Do not distribute for money and income purposes.
+
+****How to run the app****
+
+Go to folder ,,dist". Check if there are 3 files in total and if yes, run the .exe file ,,Tomova_appka.exe".
+If you do not have 3 files in the folder, compare the content of folders with content of folders on Google Drive (link bellow) and download missing components and put them to right folders.
+
+After running the .exe file, the computer will display a black window. Wait a while and the app menu will display as well.
+
+----The program doesn't have an antivirus certificate, so it is normal, that most of antivirus softwares, recognizes the program as susspicious or not trustworthy.----
+
+----You can download an updated version here: https://drive.google.com/drive/folders/1R2C4gVPoy4-hK7-J47jjgpX0i46_0Ijk?usp=sharing
+
+****If you will find any errors or mistakes, please inform the main developer on following e-mail address: ,,tom.ferdan@seznam.cz"
+
+Author: Tomáš Ferdan
+Date and time of publishment of this version: 17:06 CET  23.03.2021 
+Version: 1.13
