@@ -1,5 +1,5 @@
 # Appka
-This is a little project for begginers.
+This is a little project for begginers in Python.
 
 Please join our Discord for more information and to get properly involved: https://discord.gg/sn7r4JnvrG
 
