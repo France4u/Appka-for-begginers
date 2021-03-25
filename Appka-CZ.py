@@ -7,6 +7,7 @@ import PySimpleGUI as sg
 
 sg.change_look_and_feel("Topanga")
 
+#okno - menu aplikace
 layout = [[sg.Text ("Co chceš zapnout?"),],
         [sg.Text(("***************************************************************"), key = 'OUTPUT')],
         [sg.Button("Slovní hru"),sg.Button("Něco mi nakresli"), sg.Button("Info"), sg.Button("Opustit")]]
@@ -20,6 +21,7 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Opustit':
         break
 
+    #otevření slovní hry
     if event == "Slovní hru" :
 
         answer = "Slovní hra spuštěna!"
@@ -30,6 +32,7 @@ while True:
 
         subprocess.Popen (command)
 
+    #okno - info
     if not window1_active and event == 'Info':
         window1_active = True
         answer = "Pro více info kontaktuj autora na tom.ferdan@seznamcz"
@@ -54,7 +57,7 @@ while True:
             window1_active  = False
             window1.close()
 
-
+    #okno - menu krelení
     if not window2_active and event == 'Něco mi nakresli':
         window2_active = True
 
@@ -74,6 +77,7 @@ while True:
             window2_active  = False
             window2.close()
 
+        #otevření souboru kreslení
         if event2 == "Srdce" :
 
             answer2 = "Kreslení spuštěno, měj trpělivost."

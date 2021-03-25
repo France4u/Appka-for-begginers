@@ -8,7 +8,7 @@ left(180)
 forward(40)
 left(180)
 pendown()
-#1
+#1. hexagon
 for n in range(3):
     forward(20)
     left(60)
@@ -36,7 +36,7 @@ for n in range(3):
     left(60)
     forward(20)
     left(60)
-#
+#posun
 forward(20)
 right(60)
 forward(20)
@@ -56,7 +56,7 @@ right(60)
 
 
 
-#2
+#2. hexagon
 for n in range(3):
     forward(20)
     left(60)
@@ -84,7 +84,7 @@ for n in range(3):
     left(60)
     forward(20)
     left(60)
-#
+#posun
 penup()
 right(90)
 right(30)
@@ -94,7 +94,7 @@ forward(20)
 left(180)
 pendown()
 
-#3
+#3. hexagon
 for n in range(3):
     forward(20)
     left(60)
@@ -122,7 +122,7 @@ for n in range(3):
     left(60)
     forward(20)
     left(60)
-#
+#posun
 right(120)
 forward(20)
 left(60)
@@ -137,7 +137,7 @@ left(60)
 forward(20)
 left(60)
 
-#4
+#4.hexagon
 for n in range(3):
     forward(20)
     left(60)

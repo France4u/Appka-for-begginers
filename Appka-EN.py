@@ -7,6 +7,7 @@ import PySimpleGUI as sg
 
 sg.change_look_and_feel("Topanga")
 
+#menu window
 layout = [[sg.Text ("What would you like me to start?"),],
         [sg.Text(("***************************************************************"), key = 'OUTPUT')],
         [sg.Button("Word game"),sg.Button("Draw me something"), sg.Button("Info"), sg.Button("Exit")]]
@@ -20,6 +21,7 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Exit':
         break
 
+    #game window
     if event == "Word game" :
 
         answer = "Word game has started!"
@@ -30,6 +32,7 @@ while True:
 
         subprocess.Popen(command)
 
+    #info window
     if not window1_active and event == 'Info':
         window1_active = True
         answer = "For more info contact the author tom.ferdan@seznamcz"
@@ -54,7 +57,7 @@ while True:
             window1_active  = False
             window1.close()
 
-
+    #drawing window
     if not window2_active and event == 'Draw me something':
         window2_active = True
 
@@ -74,6 +77,7 @@ while True:
             window2_active  = False
             window2.close()
 
+        #drawing
         if event2 == "Hearth" :
 
             answer2 = "Drawing has started, be patient."

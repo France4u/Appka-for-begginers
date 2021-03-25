@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 
 sg.change_look_and_feel("Topanga")
 
-# První okno
+#okno - menu hry (v tomto okně se budou zobrazovat i výsledné věty)
 
 layout1 = [( sg.Text ("Zadej množství hráčů. (Maximálně 10):"), sg. Input(key = "players")),
             [sg.Text(("**************************************************************************************************************************************************************************************************************"), key = 'OUTPUT1')],
@@ -28,11 +28,11 @@ while True:
     if event1 == sg.WIN_CLOSED or event1 == 'Opustit':
         break
 
-        #Druhé okno
+        #Otevření okna prvního hráče (Sem si zadá, kdy, kde, kdo, atd.. a počítač to v poslení fázi rozhází)
     if not window2_active and event1 == 'Pokračovat':
         window2_active = True
 
-        i = 0
+        i = 0 #proměnná ,,i" v programu počítá, kolikrát se okno, kam hráč může zadat větu, otevřelo
 
         players = int(values1["players"])
         if ((players >= 2) and (players <= 10)):
@@ -55,6 +55,8 @@ while True:
             window2_active  = False
             window2.close()
 
+
+        #uložení zadaných údajů (věty)
         if event2 == "Ok" :
             kdy = values2["kdy"]
             kde = values2["kde"]
@@ -137,6 +139,7 @@ while True:
             window2_active  = False
             window2.close()
 
+            #postupné otevírání dalších oken, dokud proměná ,,i" není rovno hráčům
             if i < players :
                 window2_active = True
                 pismeno = "abcdefghijklm"[i]
@@ -151,6 +154,8 @@ while True:
 
                 window2 = sg.Window('Věta', layout2)
                 i = i + 1
+
+            #zbytek kódu je jen systém, jakým program rozhazuje slova (Chtěl bych v budoucnu to naprogramovat tak, aby slova počítač rozhazoval zcela náhodně)
             else:
                 if players == 2 :
                     vysledek1 = '{0} '.format(kdy_a[0:-1]) + '{0} '.format(kde_b[0:-1]) + '{0} '.format(kdo_a[0:-1]) + '{0} '.format(s_kým_b[0:-1]) + '{0} '.format(dělali_a[0:-1]) + '{0} '.format(co_b[0:-1])

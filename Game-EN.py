@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 
 sg.change_look_and_feel("Topanga")
 
-# První okno
+# window1 - menu of the game (In this window, the game will also display the results (sentences))
 
 layout1 = [( sg.Text ("Enter ammount of players (Max. 10):"), sg. Input(key = "players")),
             [sg.Text(("**************************************************************************************************************************************************************************************************************"), key = 'OUTPUT1')],
@@ -28,11 +28,11 @@ while True:
     if event1 == sg.WIN_CLOSED or event1 == 'Exit':
         break
 
-        #Second window
+        #window2 - window for the first player (Here the player will be able to enter his sentence [parts of the sentence, such as where, when, who and etc.] and in the last phase, the program will mix them, so new sentences are created as the result)
     if not window2_active and event1 == 'Continue':
         window2_active = True
 
-        i = 0
+        i = 0 #variable ,,i" counts, how many times, the window for player to enter sentence has been opened
 
         players = int(values1["players"])
         if ((players >= 2) and (players <= 10)):
@@ -55,6 +55,7 @@ while True:
             window2_active  = False
             window2.close()
 
+        #saving process of the inputs (parts of the sentences)
         if event2 == "Ok" :
             when = values2["when"]
             where = values2["where"]
@@ -137,6 +138,7 @@ while True:
             window2_active  = False
             window2.close()
 
+            #continuing with opening more windows for player to enter sentece, until the variable ,,i" is equal to ammount of players
             if i < players :
                 window2_active = True
                 letter = "abcdefghijklm"[i]
@@ -151,6 +153,8 @@ while True:
 
                 window2 = sg.Window('Sentence', layout2)
                 i = i + 1
+
+            #the rest of the code is a system, how the game is mixing the words (In the future I would like to program the game to mix words randomly)
             else:
                 if players == 2 :
                     result1 = '{0} '.format(when_a[0:-1]) + '{0} '.format(where_b[0:-1]) + '{0} '.format(who_a[0:-1]) + '{0} '.format(with_who_b[0:-1]) + '{0} '.format(did_a[0:-1]) + '{0} '.format(what_b[0:-1])
