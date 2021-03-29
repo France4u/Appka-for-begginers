@@ -3,8 +3,8 @@ Při šíření uveď autora, nešiř pro peníze.
 
 ****Jak spustit aplikaci****
 
-Najeď do složky ,,dist", zkontroluj, že tam máš dohromady 3 soubory a pokud ano, tak spusť soubor ,,Appka-CZ.exe".
-Pokud 3 soubory nemáš, porovnej obsah složky se složkou na Google Drive (odkaz níže) a chybějící položky stáhni a vlož na správné místo.
+Najeď do složky ,,dist", zkontroluj, že tam máš dohromady 6 soubory a pokud ano, tak spusť soubor ,,Appka-CZ.exe".
+Pokud 6 soubory nemáš, porovnej obsah složky se složkou na Google Drive (odkaz níže) a chybějící položky stáhni a vlož na správné místo.
 
 Chvilku počkej, zobrazí se černé okno, tak počkej déle než se spustí obrazovka aplikace.
 

@@ -3,8 +3,8 @@ When distributing mention author. Do not distribute for money and income purpose
 
 ****How to run the app****
 
-Go to folder ,,dist". Check if there are 3 files in total and if yes, run the .exe file ,,Appka-EN.exe".
-If you do not have 3 files in the folder, compare the content of folders with content of folders on Google Drive (link bellow) and download missing components and put them to right folders.
+Go to folder ,,dist". Check if there are 6 files in total and if yes, run the .exe file ,,Appka-EN.exe".
+If you do not have 6 files in the folder, compare the content of folders with content of folders on Google Drive (link bellow) and download missing components and put them to right folders.
 
 After running the .exe file, the computer will display a black window. Wait a while and the app menu will display as well.
 
